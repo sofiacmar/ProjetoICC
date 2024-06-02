@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+    <head>
+        <title>Git & GitHub Tutorial</title>
+        
+        
+       <nav id="menu"> 
+            <ul>
+                <li><a href="#"><b>Home</b></a></li>
+                <li><a href="#"><b>Áudio</b></a></li>
+                <li><a href="#"><b>Video</b></a></li>
+            </ul>
+        </nav>
+
+        <br>
+
+        <h1 style="font-family: verdana;";"" align="center">Git & GitHub Tutorial</h1>
+
+
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/fundo.css">
+
+        <style>
+            body {
+                font-family: 'Times New Roman', Times, serif;
+                max-width: fit-content;
+                padding: 10px;
+                margin: auto;
+            }
+
+            table {
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                width: 990px;
+                border-collapse: collapse;
+                margin: auto;
+                width: 100%;
+            }
+
+            tr.titulo {
+                background-color: rgb(92, 159, 83);
+            }
+
+            td {
+                border: 1px solid green;
+                padding: 5px;
+            }
+        </style>
+
+    </head>
+
+    <body style="color: rgba(255, 255, 255, 0.736);">
+
+        <h1 style="font-family: monospace";"" align="center">Como funciona e como utilizar?</h1>
+        <br>
+        <p> O Git e o GitHub são pilares fundamentais que auxiliam as equipes de desenvolvimento a controlar o versionamento de código, rastrear mudanças, colaborar de forma eficiente e garantir que o trabalho em equipe flua sem problemas.</p>
+        <br>
+        <h2 style="font-family: monospace; color:rgb(43, 219, 43)" >Git</h2>
+        <br>
+        <p>     O GIT é um <mark> sistema de controle de versão</mark>, também conhecido pela sigla VCS – <i>version control system</i>.
+                Os VCS são uma ótima forma de otimizar o trabalho ao analisar as alterações feitas em um código de projeto compartilhado, além de ser um componente fundamental do sistema de gerenciamento de configuração de software que cuida das mudanças que precisam ser feitas em um projeto.
+                As alterações/revisões/ atualizações feitas são identificáveis ​​através de códigos de letra ou números. Informações como data e a identidade do autor da alteração também são mantidas. </p>
+        <br>
+
+        <table>
+            <!--Primeira linha-->
+            <tr class="titulo">
+                <td><b> Git </b></td>
+                <td><b> Qual a função? </b></td>
+                <td><b> Como utilizar? </b></td>
+            </tr>
+
+            <tr>
+                <td>$ git init</td>
+                <td>Inicializa um Repositório em um Diretório Existente.</td>
+                <td><i>$ git init</i></td>
+            </tr>
+
+            <tr>
+                <td>$ git colne</td>
+                <td>Utilizado para clonar um repositório.</td>
+                <td><i>$ git clone &lt;url do repositório&gt;</i> </td>
+            </tr>
+
+            <tr>
+                <td>$ git branch</td>
+                <td>É uma bifurcação do estado do código que cria um novo caminho para a evolução do mesmo. Ou seja, gerencia branches (ramificações) no repositório</td>
+                <td><i>$ git branch nova-branch</i></td>
+            </tr>
+
+            <tr>
+                <td>$ git checkout</td>
+                <td>Muda entre branches ou restaura arquivos.</td>
+                <td><i>$ git checkout nova-branch</i></td>
+            </tr>
+
+            <tr>
+                <td>$ git status</td>
+                <td>Mostra o estado dos arquivos no repositório. <br>Exibe quais arquivos foram modificados, adicionados ou não monitorados.</td>
+                <td><i>$ git status</i></td>
+            </tr>
+
+            <tr>
+                <td>$ git diff</td>
+                <td>Mostra as diferenças entre versões de arquivos. Exibe as mudanças não comitadas.</td>
+                <td><i>$ git diff</i></td>
+            </tr>
+
+            <tr>
+                <td>$ git add</td>
+                <td>Adiciona o arquivo ao próximo commit.</td>
+                <td><i>$ git add arquivo.txt</i></td>
+            </tr>
+
+            <tr>
+                <td>$ git commit</td>
+                <td>Grava as mudanças no repositório.</td>
+                <td><i>$ git commit -m "Mensagem do commit"</i></td>
+            </tr>
+
+            <tr>
+                <td>$ git push</td>
+                <td>Envia commits para o repositório remoto.</td>
+                <td><i>$ git push &lt;repositório remoto&gt; &lt;branch&gt;</i></td>
+            </tr>
+
+            <tr>
+                <td>$ git pull</td>
+                <td>Puxa atualizações do repositório remoto e mescla.</td>
+                <td><i>$ git pull &lt;repositório remoto&gt; &lt;branch&gt;</i></td>
+            </tr>
+
+            <tr>
+                <td>$ git revert</td>
+                <td>Reverte um commit específico.</td>
+                <td><i>$ git revert &lt;hash_do_commit&gt;</i> </td>
+            </tr>
+
+            <tr>
+                <td>$ git merge</td>
+                <td>Mescla branches diferentes.</td>
+                <td><i>$ git merge nova-branch</i></td>
+            </tr>
+
+            <tr>
+                <td>$ git stash</td>
+                <td>Armazena mudanças temporariamente.</td>
+                <td><i>$ git stash</i></td>
+            </tr>
+
+            <tr>
+                <td>$ git rm</td>
+                <td>Remove arquivos do repositório.</td>
+                <td><i>$ git rm &lt;arquivo&gt;</i> </td>
+            </tr>
+
+            <tr>
+                <td>$ config</td>
+                <td>Configura opções do Git.</td>
+                <td><i>$ git config --global user.name "Seu nome"</i> </td>
+            </tr>
+
+            <tr>
+                <td>$ git reset</td>
+                <td>Reseta o estado do repositório para um commit anterior.</td>
+                <td><i>$ git reset --hard &lt;hash_do_commit&gt;</i></td>
+            </tr>
+
+            <tr>
+                <td>$ git remote</td>
+                <td>Gerencia repositórios remotos.</td>
+                <td><i>$ git remote add &lt;repositório remoto&gt; https://github.com/usuario/repo.git</i></td>
+            </tr>
+
+            <tr>
+                <td>$ git fetch</td>
+                <td>Busca atualizações do repositório remoto.</td>
+                <td><i>$ git fetch &lt;repositório remoto&gt;</i> </td>
+            </tr>
+
+            <tr>
+                <td>$ git show</td>
+                <td>Mostra informações sobre objetos do Git.</td>
+                <td><i>$ git show &lt;hash_do_commit&gt;</i></td>
+            </tr>
+
+            <tr>
+                <td>$ git help</td>
+                <td>Mostra ajuda sobre comandos do Git.</td>
+                <td><i>$ git help &lt;comando git&gt;</i></td>
+            </tr>
+
+            <tr>
+                <td>$ git rebase</td>
+                <td>Reaplica commits em cima de outro commit.</td>
+                <td><i>$ git rebase &lt;branch&gt;</i></td>
+            </tr>
+
+            <tr>
+                <td>$ git blame</td>
+                <td>Mostra quem modificou cada linha de um arquivo.</td>
+                <td><i>$ git blame &lt;arquivo&gt;</i></td>
+            </tr>
+
+            <tr>
+                <td>$ git tag</td>
+                <td>Marca pontos específicos na história do repositório.</td>
+                <td><i>$ git tag &lt;nome da tag&gt;</i></td>
+            </tr>
+
+        </table>
+
+        <br>
+
+        <h2 style="font-family: monospace; color:rgb(43, 219, 43)">GitHub</h2>
+        <br>
+        <p > O GitHub é um serviço baseado em nuvem que <mark> um sistema de controle de versão (VCS) chamado Git. </mark> Ele permite que os desenvolvedores colaborem e façam mudanças em projetos compartilhados enquanto mantêm um registro detalhado do seu progresso</p>
+        <h3 style="font-family:'Times New Roman', Times, serif; color:rgb(198, 240, 126)"> <br> Aprendendo na Prática...</h3>
+        
+        <h4><br>1° PASSO: Configurar o Git localmente</h4>
+        <br>
+        <p>Se ainda não tem o Git instalado, baixe e intale a partir so site oficial do <a style="color: aquamarine;" href="https://docs.github.com/pt/desktop/installing-and-authenticating-to-github-desktop/installing-github-desktop"> GitHub.</a></p> 
+        <p> <br>-> Configure o Git com duas informações de usuário: </p>
+        <p style="background-color: rgb(1, 10, 1);"> <b> $ git config --global user.name "Seu nome" <br> $ git config --global user.email "seuemail@exemplo.com"</p>
+        <br>
+       
+        <h4>2° PASSO: Criar um Repositório no GitHub</h4>
+        <p><br>Crie uma conta no site oficial do <a style="color: aquamarine;" href="https://github.com/"> <b>GitHub.</b></a></p>
+        <p>No GitHub, clique no botão new para criar um repositório. Preencha o nome do repositório e uma descrição opcional. Escolha entre público ou privado. Clique no botão "Create Resopitory"</p>
+        
+        <h4><br>3° PASSO: Conectar o Repositório Local ao GitHub</h4>
+        <p><br>Inicialize o repositório local (se ainda não feito); Pelo terminal navegue até o diretório do projeto e inicialize um novo repositório Git.<br><a style="background-color: black;"> <br> $ cd &lt;caminho/do/seu/repositorio&gt;</a></p>
+        <p><br>Copie a URL do repositório recém-criado no GitHub (algo como <i>https://github.com/usuario/repo.git</i>). Adicione esta URL como um repositório remoto.</p>
+        
+        <h4><br>4° PASSO: Fazer Commit e Push</h4>
+        <br>
+        <p >Adicione os arquivos ao staging area e faça um commit. Envie (push) os commits para o repositório GitHub.</p>
+        <br>
+       
+        <h4>5° PASSO: Trabalhar com o Repositótio</h4>
+        <br>
+        <p>Para obter as últimas mudanças do repositório remoto, use:</p>
+        <br>
+        <p>Para enviar suas mudanças para o repositório remoto, use:</p>
+        <br>
+        <p>Seguindo estes passos, você configurará corretamente seu ambiente Git para trabalhar com repositórios no GitHub, podendo assim versionar e colaborar em projetos de forma eficiente.</p>
+    </body>
+
+    <br>
+
+    <footer style="background-color: rgb(14, 82, 14);"">
+        <p style="color: rgb(241, 217, 167);""" align="center"><small> By Sofia Cabral Marcelino</small></p>
+        <p style="color: rgb(241, 217, 167);""" align="center"> <small> Science Student - Federal University of Alfenas.</small></p>
+        <p style="color: rgb(241, 217, 167);""" align="center"> <small> <a style="color: aquamarine;" href="mailto:sofia.marcelino@sou.unifal-mg.edu.br"> sofia.marcelino@sou.unifal-mg.edu.br </a> </small> </p>
+    </footer>
+</html>
