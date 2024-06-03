@@ -8,8 +8,8 @@
        <nav id="menu"> 
             <ul>
                 <li><a href="#"><b>Home</b></a></li>
-                <li><a href="#"><b>Áudio</b></a></li>
-                <li><a href="#"><b>Video</b></a></li>
+                <li><a href="audio.html"><b>Áudio</b></a></li>
+                <li><a href="video.html"><b>Video</b></a></li>
             </ul>
         </nav>
 
@@ -217,33 +217,44 @@
         <p > O GitHub é um serviço baseado em nuvem que <mark> um sistema de controle de versão (VCS) chamado Git. </mark> Ele permite que os desenvolvedores colaborem e façam mudanças em projetos compartilhados enquanto mantêm um registro detalhado do seu progresso</p>
         <h3 style="font-family:'Times New Roman', Times, serif; color:rgb(198, 240, 126)"> <br> Aprendendo na Prática...</h3>
         
-        <h4><br>1° PASSO: Configurar o Git localmente</h4>
+        <h4 style="color: rgb(198, 240, 126);"><br>1° PASSO: Configurar o Git localmente</h4>
         <br>
         <p>Se ainda não tem o Git instalado, baixe e intale a partir so site oficial do <a style="color: aquamarine;" href="https://docs.github.com/pt/desktop/installing-and-authenticating-to-github-desktop/installing-github-desktop"> GitHub.</a></p> 
-        <p> <br>-> Configure o Git com duas informações de usuário: </p>
-        <p style="background-color: rgb(1, 10, 1);"> <b> $ git config --global user.name "Seu nome" <br> $ git config --global user.email "seuemail@exemplo.com"</p>
+        <p> <br>-> Configure o Git com duas informações de usuário: </p> <br>
+        <p style="font-family: monospace; background-color: rgb(1, 10, 1);"> <b> $ git config --global user.name "Seu nome" <br> $ git config --global user.email "seuemail@exemplo.com"</p>
         <br>
        
-        <h4>2° PASSO: Criar um Repositório no GitHub</h4>
+        <h4 style="color: rgb(198, 240, 126);">2° PASSO: Criar um Repositório no GitHub</h4>
         <p><br>Crie uma conta no site oficial do <a style="color: aquamarine;" href="https://github.com/"> <b>GitHub.</b></a></p>
         <p>No GitHub, clique no botão new para criar um repositório. Preencha o nome do repositório e uma descrição opcional. Escolha entre público ou privado. Clique no botão "Create Resopitory"</p>
         
-        <h4><br>3° PASSO: Conectar o Repositório Local ao GitHub</h4>
-        <p><br>Inicialize o repositório local (se ainda não feito); Pelo terminal navegue até o diretório do projeto e inicialize um novo repositório Git.<br><a style="background-color: black;"> <br> $ cd &lt;caminho/do/seu/repositorio&gt;</a></p>
-        <p><br>Copie a URL do repositório recém-criado no GitHub (algo como <i>https://github.com/usuario/repo.git</i>). Adicione esta URL como um repositório remoto.</p>
         
-        <h4><br>4° PASSO: Fazer Commit e Push</h4>
+        <h4 style="color: rgb(198, 240, 126);"><br>3° PASSO: Conectar o Repositório Local ao GitHub</h4>
+        <p><br>Inicialize o repositório local (se ainda não feito); Pelo terminal navegue até o diretório do projeto e inicialize um novo repositório Git.</p>
         <br>
-        <p >Adicione os arquivos ao staging area e faça um commit. Envie (push) os commits para o repositório GitHub.</p>
+        <p style="font-family:monospace; background-color: black;">$ cd &lt;caminho/do/seu/repositorio&gt; <br> $ git init</p>
+        <p><br>Copie a URL do repositório recém-criado no GitHub (algo como <i>https://github.com/usuario/repo.git</i>). Adicione esta URL como um repositório remoto.</p>
         <br>
+        <p style="font-family:monospace; background-color: black;"> $ git remote add origin https://github.com/seu-usuario/seu-repositorio.git</p>
+        
+        <h4 style="color: rgb(198, 240, 126);"><br>4° PASSO: Fazer Commit e Push</h4><br>
+        <p>Crie um arquivo README (opcional/e uma explicação do que é o projeto.)</p><br>
+        <p style="font-family:monospace; background-color: black;">$ echo "# Meu Projeto" >> README.md</p><br>
+        <p >Adicione os arquivos e faça um commit.</p><br>
+        <p style="font-family:monospace; background-color: black;">$ git add README.md <br> $ git commit -m "Adicionando arquivo README"</p><br>
+        <p>Defina o nome da Branch principal:</p><br>
+        <p style="font-family:monospace; background-color: black;">$ git branch -M main</p><br>
+        <p> Envie para o Repositório Remoto: </p><br>
+        <p style="font-family:monospace; background-color: black;">$ git push -u origin main</p><br>
        
-        <h4>5° PASSO: Trabalhar com o Repositótio</h4>
-        <br>
-        <p>Para obter as últimas mudanças do repositório remoto, use:</p>
-        <br>
-        <p>Para enviar suas mudanças para o repositório remoto, use:</p>
-        <br>
-        <p>Seguindo estes passos, você configurará corretamente seu ambiente Git para trabalhar com repositórios no GitHub, podendo assim versionar e colaborar em projetos de forma eficiente.</p>
+        <h4 style="color: rgb(198, 240, 126);">5° PASSO: Trabalhar com o Repositótio</h4><br>
+        <p>Para obter as últimas mudanças do repositório remoto, use:</p><br>
+        <p style="font-family:monospace; background-color: black;">$ git pull origin main</p><br>
+        <p>Para enviar suas mudanças para o repositório remoto, use:</p><br>
+        <p style="font-family:monospace; background-color: black;">$ git push origin main</p><br>
+        <p><small>Tela do GitHub com os comandos</small></p><br>
+        <img src="comandos.png" /><br>
+        <p>Seguindo estes passos, você configurará corretamente seu ambiente Git para trabalhar com repositórios no GitHub, podendo assim versionar e colaborar em projetos de forma eficiente.</p><br>
     </body>
 
     <br>
