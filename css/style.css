@@ -26,3 +26,20 @@
     color: rgb(0, 0, 0);
     background-color: rgb(22, 112, 22);
 }
+
+#dov{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+#video{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+#imagem{
+    display: flex;
+    justify-content: center;
+}
